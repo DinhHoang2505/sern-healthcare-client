@@ -1,0 +1,154 @@
+.login-wrapper {
+    height: 100vh;
+    background-image: linear-gradient(135deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(253, 187, 45, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-container {
+        width: 500px;
+        height: 740px;
+        margin: auto 0;
+        background-color: white;
+        border-radius: 2rem;
+
+        .login-content {
+            padding: 30px;
+
+            .login-title {
+                text-align: center;
+                font-weight: 600;
+            }
+
+            .form-group {
+                margin: 20px 0 30px 0;
+                .helper {
+                    color: red;
+                }
+                .text-field {
+                    border-style: none;
+                    padding: 8px 5px;
+                    font-size: 20px;
+                    border-bottom: 1px solid rgba(172, 9, 9, 0.5);
+                    outline: none;
+
+                    &:focus .label-field {
+                        color: rgb(138, 10, 27);
+                    }
+                }
+
+                .label-field {
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: rgb(226, 205, 179);
+                    margin-bottom: 6px;
+                }
+
+                .form-control-password {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .hidden-password,
+                    .show-password {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .login-other {
+                color: white;
+            }
+
+            .login-other-media {
+                text-align: center;
+
+                .login-other-media-text {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            .login-forgot {
+                margin-bottom: 25px;
+
+                .login-forgot-text {
+                    text-decoration: underline;
+                    font-size: 14px;
+                    color: rgb(124, 118, 118);
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.9;
+                        color: black;
+                    }
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+                font-size: 24px;
+                height: 55px;
+                margin: 20px 0;
+                color: white;
+
+                .btn-login-icon {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    margin-right: 15px;
+                    padding: 25px;
+                }
+            }
+
+            .btn-login-user {
+                // border-radius: 25px;
+                background: linear-gradient(135deg,
+                        rgba(34, 193, 195, 1) 0%,
+                        rgba(253, 187, 45, 1) 100%);
+                padding: auto 35px;
+
+            }
+
+            .btn-login-google,
+            .btn-login-facebook,
+            .btn-login-user {
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .btn-login-google,
+            .btn-login-facebook {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding: 25px 0 25px 25px;
+                margin: 20px 0;
+            }
+
+            .btn-login-google {
+                background-color: rgb(190, 73, 73);
+            }
+
+            .btn-login-facebook {
+                background-color: rgb(51, 51, 161);
+            }
+
+            .login-signup {
+                margin-top: 35px;
+            }
+        }
+    }
+}

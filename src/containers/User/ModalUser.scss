@@ -1,0 +1,31 @@
+.form-row {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.form-group {
+   margin-right: 10px;
+
+}
+
+label {
+   margin-bottom: 2px;
+}
+
+.btn {
+   padding: 5px 10px;
+}
+
+.btn-submit {
+   width: 100px;
+   height: 45px;
+   font-size: 17px;
+}
+
+.close {
+   color: white;
+   background: transparent;
+   border: none;
+   font-size: 30px;
+   padding: 0px 8px;
+}
